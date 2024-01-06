@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./ojoaproject.css" rel="stylesheet" />
+    <title>소통하는 개발자, 어성은의 포트폴리오입니다.</title>
+    <script src="ojoaproject.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header id="header">
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="../index.html">홈</a></li>
+                    <li><a href="#main">메인페이지</a></li>
+                    <li><a href="#productlist">상품목록페이지</a></li>
+                    <li><a href="#wish">관심상품 페이지</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="main">
+                <div>
+                    <h1>메인페이지</h1>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>상품검색</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/search.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">메인페이지에서 헤더부분 우측의 돋보기 아이콘 클릭시 상품 검색이 가능한 모달창이 뜨게됩니다.
+                            동영상 시연은 차례로 "없음" "의자" "조명"＂침대” 라는 단어를 검색한 결과를 보여줍니다.
+                            또한 "진기의 철의 왕좌"를 검색하고 검색결과로 "진기의 철의 왕좌"를 클릭시 해당 상품의 상세페이지로 이동가능합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>네비게이션바 이동</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/nav.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">네비게이션 바에서 각각 카테고리 클릭 시 해당 카테고리로 이동하게 됩니다.
+                            이는 해당하는 컬럼에 맞는 데이터 값만 추출하는 코드로 작성되어 있습니다. ex. prod_kind == "의자"
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>메인페이지 하단 - TOP 6 상품</h2>
+                    </div>
+                    <div>
+                        <img class="video" src="/image/top6.png" alt="top6섹션이미지">
+                        <p>EXPLAINATION</p>
+                        <p class="content">메인페이지 하단 부분에 상품 6개가 2행 3열로 배치되어있는 섹션은 오조아 사이트에 등록된 상품(데이터) 중 상품리뷰가 상위 6위 제품을
+                            추출해서 배치하였습니다.
+                            DB에서 prod_grade가 가장 높은 제품 6개 추출하였습니다.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+            <section id="productlist">
+                <div>
+                    <h1>상품목록페이지</h1>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>BEST / NEW</h2>
+                    </div>
+                    <div>
+                        <img class="video" src="/image/bestnew.png" alt="best/new 페이지">
+                        <p>EXPLAINATION</p>
+                        <p class="content">BEST 페이지는 DB에서 Product테이블의 컬럼 prod_grade가 4.2이 이상인 상품들을 추출한 페이지입니다. 그리고
+                            NEW 페이지는 각 카테고리별 등록일 기준 최신 등록된 상품 2개씩 추출하여 총 12개의 상품이 배치되어 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>상품 필터</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/filters.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">상품목록리스트페이지에서 상품들은 기본적으로는 신상품순으로 정렬이 되어있습니다.
+                            사용자의 편리한 이용을 위해 상품을 기준별 정렬 배치를 달리할 수 있는 기능 필터를 상품 정렬 윗부분에 위치되어있습니다.
+                            동영상에 신상품 / 상품명 / 낮은가격 / 높은가격 / 사용후기 별로 필터기능을 시연하였습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>페이지네이션</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/pagination.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">상품목록은 상품 4x4 배치로 상품이 한페이지에서 16개 이상이라면 페이지네이션을 적용해서 숫자버튼이 늘어나게끔 코드를 작성하였습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="productdetail">
+                <div>
+                    <h1>상품상세페이지</h1>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>상품상세페이지 구성(4 sections)</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/detail4sections.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">상품상세페이지는 상단에는 상품의 이미지 포함, 기본적인 정보가 보이는 부분이며 DB의 product / prod_image 테이블을
+                            활용했습니다.
+                            또한 상품 대표이미지는 대표이미지 하단의 미니 썸네일을 클릭시 해당하는 이미지가 대표이미지가 변경되는 것을 확인해보실 수 있습니다.
+                            하단의 4개의 섹션은 상품상세이미지, 상품구매후기, 상품 Q&A, 상품구매후기로 4갈래로 나뉘어집니다.
+                            상품상세정보의 상세이미지부분은 prod_image테이블의 데이터를 활용하고 상품구매후기 섹션은 review 테이블, 상품 Q&A는 qna 테이블을 활용합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>상품상세페이지 : 상품구매후기 섹션 - 리뷰 작성</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/review.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">상품상세페이지의 하단에 상품구매후기 섹션의 후기 작성 시연동영상입니다.
+                            (로그인 후) 메인페이지에서 TOP6 중 평점 5점의 '책장같아 보이지만 옷장' 상품에 1점으로 후기를 남겨보도록 하겠습니다.
+                            모달창을 통해 상품 리뷰가 작성이 되어 서버로 review 테이블에 저장이 됩니다.
+                            상품구매후기 섹션에 서버에서 받아온 review테이블 DB가 배치가 되어있는 것을 확인할 수 있습니다.
+                            그 결과, 메인페이지에서 TOP 6에서 제외되었고, 상품 평점이 5점에서 3점으로 하락된 것을 확인 가능합니다.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>상품상세페이지 : 상품Q&A 섹션</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/productqna.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">상품상세페이지의 하단에 상품Q&A 섹션은 상품구매후기 section과 유사합니다.
+                            차이점이 있다면, 관리자에 의해서 답변이 된 문의글은 해당 문의글을 클릭시 하단에 답변란이 생겨 확인 가능이 가능합니다.
+                            시연 동영상은 상품 문의글의 문의를 남기고 관리자로 로그인을 해서 관리자가 해당 문의글에 답변을 남겨 유저가 문의글의 답변을 확인하는 시연동영상입니다.
+                            추가적으로 관리자가 문의글에 문의 답변을 남기면 답변 유무를 확인할 수 있습니다.
+                            또한 문의 팝업창에서 해당 상품 번호가 Product 테이블의 Prod_num 컬럼을 활용해서 사용자가 어떠한 제품의 문의글을 남기고 있는지 확인 가능합니다.
+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>상품상세페이지 : 상품구매후기 / 상품Q&A 섹션 - 글 조회기능</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/minefilter.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">상품상세페이지의 하단에 상품구매후기 섹션의 후기 "내가쓴글조회하기" 기능 시연동영상입니다.
+                            (banana ID 로그인 후) '내가쓴글조회하기' 클릭시 banana의 글이 조회되는 것을 확인해보실 수 있습니다.
+                            대표적으로 상품구매후기 섹션으로 시연동영상을 첨부하였는데, 상품Q&A 섹션도 같은 기능을 합니다.
+                            추가적으로 두개의 섹션 모두 Img src가 null일시 이미지 태그가 노출되지 않는 것을 확인해보실 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>상품상세페이지 : 상품구매후기 / 상품Q&A 섹션 - 비로그인시</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/notlogin.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">상품상세페이지의 하단에 상품구매후기 섹션과 상품 Q&A 섹션은 로그인을 하지 않은 상태에서는 이용이 불가하게 코드가 짜여져 있습니다.
+                            로그인이 하지 않은 상태는 세션에 저장된 로그인 정보가 null인 것을 이용해서 로그인 값이 null이라면 로그인 유도 alert 창이 뜨게됩니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="wish">
+                <div>
+                    <h1>관심상품 페이지</h1>
+                </div>
+                <div>
+                    <div>
+                        <h2>관심상품 추가 시연</h2>
+                    </div>
+                    <div>
+                        <video muted controls class="video">
+                            <source src="../videos/wish.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <p>EXPLAINATION</p>
+                        <p class="content">관심상품은 상품상세페이지와 마찬가지로 로그인 값이 null인 경우에는 로그인 유도 alert 창이 뜨고,
+                            로그인 시 하트모양 아이콘을 클릭시에 마이페이지에 관심상품 페이지에 해당 상품이 추가됩니다.
+                            또한 관심상품은 장바구니와 다르게 관심상품을 중복으로 추가되는 것이 아닌,
+                            해당 상품이 이미 관심상품 목록에 있을 경우는 추가되지 않게 JOIN query문을 이용해서 데이터 중복검사를 하여 중복 추가가 되지 않습니다.
+                            만약 중복으로 아이콘을 클릭시에는 해당 상품이 이미 관심상품에 등록되어 있습니다라는 alert 창이 뜨게 됩니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer>
+            <div>Copyright 2024. seongeun. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+
+</html>
