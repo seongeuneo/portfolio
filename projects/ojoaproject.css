@@ -28,6 +28,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 header .seongeun {
