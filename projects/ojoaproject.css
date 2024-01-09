@@ -4,6 +4,7 @@
 
 * {
     font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
 }
 
 a {
@@ -11,9 +12,147 @@ a {
     color: inherit;
 }
 
-.wrap {
-    width: 80%;
-    margin: 0 auto;
+/* 데스크톱 화면 크기에 대한 스타일 */
+@media (min-width: 1024px) {
+
+    /* 데스크톱에 대한 스타일 수정 */
+    .wrap {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main {
+        margin: 180px auto;
+    }
+
+
+    .mainNav ul {
+        margin-left: 30px;
+    }
+
+    .mainNav a {
+        font-size: 30px;
+    }
+
+    .mainNav ul li {
+        margin-right: 20px;
+    }
+
+
+    main .video {
+        width: 850px;
+    }
+
+
+    main .content {
+        width: 600px;
+        font-size: 13px;
+    }
+
+    main .maincontent {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+    #main {
+        margin-top: 100px;
+    }
+
+
+    #productlist {
+        margin-top: 50px;
+    }
+
+
+}
+
+
+/* =============================== */
+
+
+/* 태블릿 및 모바일 화면 크기에 대한 스타일 */
+@media (max-width: 768px) {
+
+    /* 태블릿 및 모바일에 대한 스타일 수정 */
+    .wrap {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #header {
+        height: 35px;
+        font-size: 20px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .main {
+        margin: 90px 0;
+    }
+
+    .mainNav ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .mainNav ul li {
+        margin-right: 10px;
+    }
+
+    .mainNav a {
+        font-size: 11px;
+    }
+
+
+    main .video {
+        width: 350px;
+        box-sizing: border-box;
+    }
+
+    main p {
+        font-size: 9px;
+    }
+
+    main .content {
+        width: 300px;
+        font-size: 7px;
+    }
+
+    main .maincontent {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 17px;
+    }
+
+    #main {
+        margin-top: 50px;
+    }
+
+
+
+    #productlist {
+        margin-top: 25px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+
+
 }
 
 /* mainNav */
@@ -27,8 +166,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    font-size: 26px;
     font-weight: bold;
 }
 
@@ -40,16 +177,10 @@ header .seongeun {
     display: flex;
     list-style: none;
     padding: 0;
-    margin-left: 30px;
-}
-
-.mainNav ul li {
-    margin-right: 20px;
 }
 
 /* main */
-main {
-    margin: 180px 0;
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,34 +188,27 @@ main {
     text-align: center;
 }
 
+/* =============================== */
+
+
 main .video {
-    width: 850px;
     height: auto;
     border: 2px solid #0000003e;
     border-radius: 3px;
 }
 
 main .content {
-    width: 600px;
     text-align: justify;
-    margin: 0 auto; 
+    margin: 0 auto;
     font-weight: lighter;
-    font-size: 13px;
 }
 
 main .maincontent {
-    padding-top: 30px;
-    padding-bottom: 30px;
     border-bottom: 1px solid #00000072;
 }
 
 main h1 {
     background-color: #D9D4CF;
-    font-size: 40px;
-}
-
-#productlist {
-    margin-top: 50px;
 }
 
 /* footer */
@@ -92,4 +216,3 @@ footer {
     text-align: center;
     margin-bottom: 100px;
 }
-
