@@ -70,7 +70,6 @@ a {
         width: 90%;
         margin: 0 auto;
         text-align: center;
-        display: flex;
         flex-wrap: wrap;
         background-color: #fff;
         margin: 0 auto;
@@ -79,6 +78,7 @@ a {
 
     .introSection ul {
         margin: 0 auto;
+        display: inline-block;
     }
 
     .introSection ul li {
@@ -94,35 +94,39 @@ a {
     .introSection .skills {
         flex: 0 0 calc(70% - 20px);
         margin: 0 auto;
-        width: 150px;
         text-align: center;
+        align-items: center;
     }
-
+    
+    .introSection .skills h4 {
+        font-size: 25px;
+        margin: 0 auto; /* h4를 중앙에 정렬 */
+        display: inline-block; /* h4를 중앙에 잘 정렬되도록 설정 */
+    }
+    
     .introSection .skills table {
-        width: 100%;
+        margin: 0 auto;
+        width: auto; /* 내용에 맞게 테이블 너비 조정 */
+        max-width: 100%; /* 반응형으로 너비 설정 */
         border-collapse: collapse;
     }
-
+    
     .introSection .skills table th,
     .introSection .skills table td {
         padding: 8px;
         border: 1px solid #ddd;
         text-align: left;
     }
-
+    
     .introSection .skills table th {
         background-color: #f2f2f2;
         font-weight: bold;
     }
-
+    
     .introSection .skills h3 {
         font-size: 35px;
     }
-
-    .introSection .skills h4 {
-        font-size: 25px;
-    }
-
+    
     .introSection .about {
         flex: 0 0 100%;
         text-align: center;
