@@ -200,12 +200,14 @@ a {
     }
 
     .projectsSection .project1 .skillspan {
-        margin: 1px;
+        display: inline-block;
+        margin: 3px;
         padding: 1px 6px;
         border-radius: 14px;
         color: #ffffff;
         font-weight: bold;
         background-color: #7c7877a4;
+        margin-bottom: 5px;
     }
 
     .projectsSection .pageIMG {
@@ -618,14 +620,15 @@ a {
     }
 
     .projectsSection .project1 .skillspan {
+        display: inline-block;
         margin: 1px;
-        margin-top: 15px;
         padding: 3px 10px;
         border-radius: 14px;
         color: #ffffff;
         font-weight: bold;
         background-color: #7c7877a4;
         font-size: 15px;
+        margin-bottom: 5px;
     }
 
     .projectsSection .pageIMG img {
@@ -1001,14 +1004,15 @@ a {
     }
 
     .projectsSection .project1 .skillspan {
+        display: inline-block;
         margin: 1px;
-        margin-top: 15px;
         padding: 3px 10px;
         border-radius: 14px;
         color: #ffffff;
         font-weight: bold;
         background-color: #7c7877a4;
         font-size: 15px;
+        margin-bottom: 5px;
     }
 
     .projectsSection .pageIMG img {
