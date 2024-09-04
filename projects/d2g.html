@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./ojoaproject.css" rel="stylesheet" />
+    <title>소통하는 개발자, 어성은의 포트폴리오입니다.</title>
+    <script src="./ojoaproject.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header id="header">
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="../index.html">홈</a></li>
+                    <li><a href="#main">댕이고</a></li>
+                    <li><a href="#productlist">기술 스택</a></li>
+                    <li><a href="#detail">담당 세부 프로젝트</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="main">
+                <div>
+                    <h1>댕이고</h1>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>반려동물 헬스케어 웹앱 어플리케이션</h2>
+                    </div>
+                    <div>
+                        <img class="video" src="../image/d2g3img.png" alt="댕이고소개이미지">
+                    </div>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>프로젝트 기획</h2>
+                    </div>
+                    <div>
+                        <img class="video" src="../image/d2g4plan.png" alt="댕이고네가지프로젝트">
+                    </div>
+                </div>
+            </section>
+
+            <section id="productlist">
+                <div>
+                    <h1>기술스택</h1>
+                </div>
+
+                <div class="maincontent">
+                    <div>
+                        <h2>프로그래밍 언어</h2>
+                    </div>
+                    <div>
+                        <span class="skillspan">&nbsp;⸰ Java 17 </span>
+                    </div>
+
+                    <div>
+                        <h2>프레임 워크</h2>
+                    </div>
+                    <div>
+                        <span class="skillspan">&nbsp;⸰ Spring boot 3.2.5 </span><br>
+                        <span class="skillspan">&nbsp;⸰ Mybatis </span>
+                    </div>
+
+                    <div>
+                        <h2>데이터베이스</h2>
+                    </div>
+                    <div>
+                        <span class="skillspan">&nbsp;⸰ RDBMS : MariaDB </span><br>
+                        <span class="skillspan">&nbsp;⸰ NoSQL : Redis (환경 : Ubuntu) </span>
+                    </div>
+
+                    <div>
+                        <h2>클라우드 서비스</h2>
+                    </div>
+                    <div>
+                        <span class="skillspan">&nbsp;⸰ AWS EC2, S3, RDS </span><br>
+                        <span class="skillspan">&nbsp;⸰ AWS IAM </span><br>
+                        <span class="skillspan">&nbsp;⸰ AWS CodeCommit </span><br>
+                        <span class="skillspan">&nbsp;⸰ AWS CodePipeline </span>
+                    </div>
+
+                    <div>
+                        <h2>버전 관리 및 협업 도구</h2>
+                    </div>
+                    <div>
+                        <span class="skillspan">&nbsp;⸰ Git(Gitbash) </span><br>
+                        <span class="skillspan">&nbsp;⸰ Postman </span>
+                    </div>
+
+                    <div>
+                        <h2>사용 IDE</h2>
+                    </div>
+                    <div>
+                        <span class="skillspan">&nbsp;⸰ IntelliJ / Datagrip / WebStorm </span>
+                    </div>
+
+                    <div>
+                        <h2>기타 기술</h2>
+                    </div>
+                    <div>
+                        <span class="skillspan">&nbsp;⸰ 로그인 방식: JWT </span><br>
+                        <span class="skillspan">&nbsp;⸰ 오류 추적 및 모니터링: Sentry </span><br>
+                        <span class="skillspan">&nbsp;⸰ API 정의서: Swagger → 구글Docs 사용</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="detail">
+                <div>
+                    <h1>담당 세부 프로젝트</h1>
+                </div>
+            
+                <div>
+                    <p>
+                        . 댕이고 신규 웹앱 서비스 API 개발<br>
+                        프로젝트 개요: 반려동물 웹앱 서비스의 백엔드 API 개발을 담당한 프로젝트로, <br>
+                        초기에는 2명의 팀원과 함께 시작하여 최종적으로 3명으로 확장된 팀에서 주도적으로 작업을 수행했습니다.<br>
+                        프로젝트 내 패키지 지분율의 약 80% 담당하였습니다.<br><br>
+            
+                        <b>담당한 프로젝트 :</b><br><br>
+            
+                        <h3>&lt; 공통영역 &gt;</h3><br>
+                        <h4>CustomException 설계 및 구현:</h4>
+                        API 전반에 걸쳐 일관된 예외 처리 로직을 설계하여 유지보수성과 코드 안정성을 높였습니다.<br>
+                        <h4>공통 이미지 (AWS S3 활용):</h4>
+                        AWS S3를 활용하여 이미지 파일을 효율적으로 관리<br>
+                        <h4>Spring Scheduler를 활용한 임시 이미지 정리:</h4>
+                        Scheduler를 사용해 임시 이미지를 주기적으로 정리하여 스토리지 효율을 극대화<br>
+                        <h4>Interceptor를 활용한 비회원 처리:</h4>
+                        Interceptor를 통해 비회원 사용자의 접근 제어 로직을 구현, 보안성과 접근성을 향상<br>
+                        <h4>공통 코드 로직 (날짜 변환):</h4>
+                        날짜 변환 등 여러 API에서 사용되는 공통 코드 로직을 개발하여 코드의 재사용성<br>
+                        <h4>Reflection 활용:</h4>
+                        공통 Pagination<br><br>
+            
+                        <h3>&lt; 단일 프로젝트 영역 &gt;</h3><br>
+                        <h4>사주 (Chat GPT API 활용)</h4>
+                        <div>
+                            <img class="video" src="../image/d2g_saju.png" alt="댕이고사주이미지">
+                        </div>
+                        <h4>운세 (외부 API 활용)</h4>
+                        <div>
+                            <img class="video" src="../image/d2g_dailyfortune.png" alt="댕이고운세이미지">
+                        </div>
+                        <h4>궁합 (외부 API 활용)</h4>
+                        <div>
+                            <img class="video" src="../image/d2g_compatibility.png" alt="댕이고궁합이미지">
+                        </div>
+                        <h4>MBTI</h4>
+                        <div>
+                            <img class="video" src="../image/d2g_mbti_intro.png" alt="댕이고mbti인트로">
+                        </div>
+                        <div>
+                            <img class="video" src="../image/d2g_mbti_q.png" alt="댕이고mbti검사">
+                        </div>
+                        <div>
+                            <img class="video" src="../image/d2g_mbti_r.png" alt="댕이고mbti결과">
+                        </div>
+            
+                        <h4>1:1 문의 게시판 CRUD</h4>
+                        <div>
+                            <img class="video" src="../image/d2g_1vs1.png" alt="댕이고문의이미지">
+                        </div>
+                        <h4>사진 일기 CRUD</h4>
+                        <div>
+                            <img class="video" src="../image/d2g_dailychallenge2.png" alt="댕이고사진일기이미지">
+                        </div>
+                        <h4>배너 CRUD</h4>
+                        <div>
+                            <img class="video" src="../image/d2g_mbti_r.png" alt="댕이고배너이미지">
+                        </div>
+                    </p>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <div>Copyright 2024. seongeun. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+
+</html>
